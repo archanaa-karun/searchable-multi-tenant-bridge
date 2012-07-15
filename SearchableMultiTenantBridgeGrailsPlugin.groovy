@@ -9,7 +9,8 @@ class SearchableMultiTenantBridgeGrailsPlugin {
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.7 > *"
     // the other plugins this plugin depends on
-    def dependsOn = [:]
+    def dependsOn = [searchable: "0.6.3",
+					multiTenantCore: "1.0.3"]
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
             "grails-app/views/error.gsp"
@@ -18,13 +19,13 @@ class SearchableMultiTenantBridgeGrailsPlugin {
     // TODO Fill in these fields
     def author = "Archanaa K. Karun"
     def authorEmail = ""
-    def title = "Plugin summary/headline"
+    def title = "searchable-multi-tenant-bridge (SMTB)"
     def description = '''\\
-Brief description of the plugin.
+This Plugin is to overcome the ClassCastException that occurs while the two plugins Searchable [http://grails.org/plugin/searchable] and Multi-Tenant Plugin (Core) [http://grails.org/plugin/multi-tenant-core] co-exist together.
 '''
 
     // URL to the plugin's documentation
-    def documentation = "http://grails.org/plugin/searchable-multi-tenant-bridge"
+    def documentation = "https://github.com/archanaa-karun/searchable-multi-tenant-bridge"
 
     def doWithWebDescriptor = { xml ->
         // TODO Implement additions to web.xml (optional), this event occurs before 
