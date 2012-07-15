@@ -9,22 +9,24 @@ This particular exception occurs due to the dependent plugin of the Multi-Tenant
 This is caused due to the modification of the session in com.infusion.util.event.spring.InterceptableSessionFactoryPostProcessor. Due to this modification, the session (SessionFactoryImpl) needed by the Indexing mechanism (Compass) is modified as the session (InterceptableSessionFactory) and hence throws the Exception at the below point of code:
 
 
-public class DefaultHibernateEntityLifecycleInjector implements HibernateEntityLifecycleInjector {
+	public class DefaultHibernateEntityLifecycleInjector implements HibernateEntityLifecycleInjector {
     
-    public void injectLifecycle(SessionFactory sessionFactory, HibernateGpsDevice device) throws HibernateGpsDeviceException {
+    		public void injectLifecycle(SessionFactory sessionFactory, HibernateGpsDevice device) throws HibernateGpsDeviceException {
 
-        SessionFactoryImpl sessionFactoryImpl = (SessionFactoryImpl) sessionFactory;
-        .....
-      }
-      .....
-}
+        		SessionFactoryImpl sessionFactoryImpl = (SessionFactoryImpl) sessionFactory;
+        		.....
+     		}
+      		.....
+	}
 
 
-So what this plugin does is, it performs the session modification required by the Searchable Plugin first.
+So what this plugin does is, it performs the indexing required for search by the Searchable Plugin first and then the session modification for Multi Tenant (Core) happens.
 
 Due to this the we need to accomodate the below few few drawbacks with Multi-Tenant Plugin (Core) Plugin:
 
 Refer http://multi-tenant.github.com/grails-multi-tenant-core/guide/4.%20Behind%20the%20scenes.html
+
+Just install this Plugin and do the following modifications specific to Multi-Tenant (Core).
 
 1. Dynamically injected Named Parameter ":tenantId" will not work
 =================================================================
