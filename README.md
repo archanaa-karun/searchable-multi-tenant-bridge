@@ -1,7 +1,7 @@
 searchable-multi-tenant-bridge (SMTB)
 ==============================
 
-This Plugin is to overcome the ClassCastException that occurs while the two plugins Searchable [http://grails.org/plugin/searchable] and Multi-Tenant Plugin (Core) [http://grails.org/plugin/multi-tenant-core]
+This Plugin is to overcome the ClassCastException that occurs while the two plugins Searchable [http://grails.org/plugin/searchable] and Multi-Tenant Plugin (Core) [http://grails.org/plugin/multi-tenant-core] co-exist together.
 
 This particular exception occurs due to the dependent plugin of the Multi-Tenant Plugin (Core) called Falcone Util [http://grails.org/plugin/falcone-util].
 This is caused due to the modification of the session in com.infusion.util.event.spring.InterceptableSessionFactoryPostProcessor. Due to this modification, the session (SessionFactoryImpl) needed by the Indexing mechanism (Compass) is modified as the session (InterceptableSessionFactory) and hence throws the Exception at the below point of code:
