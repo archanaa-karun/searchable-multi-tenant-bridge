@@ -10,8 +10,8 @@
     <resource>UrlMappings</resource>
   </resources>
   <dependencies>
-    <plugin name='searchable' version='0.6.3' />
-    <plugin name='multiTenantCore' version='1.0.3' />
+    <plugin name='searchable' version='* &gt; 0.6.3' />
+    <plugin name='multiTenantCore' version='* &gt; 1.0.3' />
   </dependencies>
   <behavior />
 </plugin>
