@@ -22,7 +22,7 @@ This is caused due to the modification of the session in com.infusion.util.event
 
 So what this plugin does is, it performs the indexing required for search by the Searchable Plugin first and then the session modification for Multi Tenant (Core) happens.
 
-Due to this the we need to accomodate the below few few drawbacks with Multi-Tenant Plugin (Core) Plugin:
+Due to this, we need to accomodate the below few drawbacks that happens with Multi Tenant Features:
 
 Refer http://multi-tenant.github.com/grails-multi-tenant-core/guide/4.%20Behind%20the%20scenes.html
 
