@@ -1,9 +1,7 @@
 <plugin name='searchable-multi-tenant-bridge' version='0.1' grailsVersion='1.3.7 &gt; *'>
   <author>Archanaa K. Karun</author>
   <title>searchable-multi-tenant-bridge (SMTB)</title>
-  <description>\
-This Plugin is to overcome the ClassCastException that occurs while the two plugins Searchable [http://grails.org/plugin/searchable] and Multi-Tenant Plugin (Core) [http://grails.org/plugin/multi-tenant-core] co-exist together.
-</description>
+  <description>This Plugin is to overcome the ClassCastException that occurs while the two plugins Searchable [http://grails.org/plugin/searchable] and Multi-Tenant Plugin (Core) [http://grails.org/plugin/multi-tenant-core] co-exist together.</description>
   <documentation>https://github.com/archanaa-karun/searchable-multi-tenant-bridge</documentation>
   <resources>
     <resource>BuildConfig</resource>

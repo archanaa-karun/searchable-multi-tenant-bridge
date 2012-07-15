@@ -20,9 +20,7 @@ class SearchableMultiTenantBridgeGrailsPlugin {
     def author = "Archanaa K. Karun"
     def authorEmail = ""
     def title = "searchable-multi-tenant-bridge (SMTB)"
-    def description = '''\\
-This Plugin is to overcome the ClassCastException that occurs while the two plugins Searchable [http://grails.org/plugin/searchable] and Multi-Tenant Plugin (Core) [http://grails.org/plugin/multi-tenant-core] co-exist together.
-'''
+    def description = '''This Plugin is to overcome the ClassCastException that occurs while the two plugins Searchable [http://grails.org/plugin/searchable] and Multi-Tenant Plugin (Core) [http://grails.org/plugin/multi-tenant-core] co-exist together.'''
 
     // URL to the plugin's documentation
     def documentation = "https://github.com/archanaa-karun/searchable-multi-tenant-bridge"
