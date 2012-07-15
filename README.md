@@ -1,5 +1,7 @@
-searchable-multi-tenant-bridge (SMTB)
-==============================
+Searchable - Multi Tenant Bridge (SMTB)
+=======================================
+
+There are many developers who struggle to overcome the problems that exist when the two essential Grails Plugins Searchable and Multi Tenant (Core) for an application come together. Here is the solution for it.
 
 This Plugin is to overcome the ClassCastException that occurs while the two plugins Searchable [http://grails.org/plugin/searchable] and Multi-Tenant Plugin (Core) [http://grails.org/plugin/multi-tenant-core] co-exist together.
 
